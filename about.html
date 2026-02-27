@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bridge 2 Bitcoin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --orange: #f7931a;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --gray: #666666;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+        
+        header {
+            background: var(--dark);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--orange);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--orange);
+        }
+        
+        .section {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: var(--gray);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+        }
+        
+        .team-member {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            min-width: 200px;
+        }
+        
+        .team-member h3 {
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-member p {
+            color: var(--gray);
+            margin-bottom: 0;
+        }
+        
+        .podcasts {
+            margin-top: 2rem;
+        }
+        
+        .podcast-link {
+            display: block;
+            padding: 1rem;
+            background: #f5f5f5;
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .podcast-link:hover {
+            background: #eee;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: var(--gray);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Bridge 2 Bitcoin</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="section">
+        <h1>About Us</h1>
+        <p class="subtitle">Building the Bitcoin Circular Economy in the UK</p>
+        
+        <p>Founded in early 2022, Bridge 2 Bitcoin offers its services for free to help grow the Bitcoin circular economy.</p>
+        
+        <p>We onboard merchants throughout the UK to accept Bitcoin Lightning payments. We keep on top of the fast-changing solutions available for businesses wanting to access the future of money.</p>
+        
+        <h2>Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>Simon</h3>
+                <p>Designer</p>
+            </div>
+            <div class="team-member">
+                <h3>Chris</h3>
+                <p>Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>James</h3>
+                <p>Client Service</p>
+            </div>
+        </div>
+        
+        <h2>Podcast Appearances</h2>
+        <div class="podcasts">
+            <a href="https://www.bizbitshow.com/episode/trojan-horse-approach-no-downside-marketing-as-an-onboard-to-bitcoin" class="podcast-link" target="_blank">
+                📻 Business Bitcoinization Podcast — Trojan horse approach to Bitcoin onboarding
+            </a>
+            <a href="https://podcasts.apple.com/gb/podcast/bridge2bitcoin-helping-merchants-understand-bitcoin/id1497540130?i=1000576670969" class="podcast-link" target="_blank">
+                📻 The Bitcoin Podcast — Helping merchants understand Bitcoin
+            </a>
+        </div>
+        
+        <h2>Support Us</h2>
+        <p>You can support our work via Geyser:</p>
+        <a href="https://geyser.fund/project/bridge2bitcoin" class="podcast-link" target="_blank">
+            ⚡ Support Bridge 2 Bitcoin on Geyser
+        </a>
+    </section>
+    
+    <footer>
+        <p>Bridge 2 Bitcoin — Growing the UK Bitcoin Economy</p>
+        <div class="social-links">
+            <a href="https://twitter.com/bridge2bitcoin" target="_blank">Twitter</a>
+            <a href="https://instagram.com/bridge2bitcoin" target="_blank">Instagram</a>
+            <a href="https://geyser.fund/project/bridge2bitcoin" target="_blank">Geyser</a>
+        </div>
+    </footer>
+</body>
+</html>

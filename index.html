@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge 2 Bitcoin - Building the Bitcoin Circular Economy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --orange: #f7931a;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --gray: #666666;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+        
+        header {
+            background: var(--dark);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--orange);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--orange);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--dark) 0%, #2a2a2a 100%);
+            color: var(--light);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #cccccc;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--orange);
+            color: var(--light);
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 1rem;
+            color: var(--orange);
+        }
+        
+        footer {
+            background: var(--dark);
+            color: var(--gray);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: var(--orange);
+            text-decoration: none;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            padding: 3rem 2rem;
+            background: #f5f5f5;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--orange);
+        }
+        
+        .stat-label {
+            color: var(--gray);
+        }
+        
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
+        .team-member h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-member p {
+            color: var(--gray);
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: var(--dark);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">Bridge 2 Bitcoin</a>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Building the Bitcoin Circular Economy</h1>
+        <p>We help UK merchants accept Bitcoin Lightning payments — for free. Reduce fees, embrace the future of money.</p>
+        <a href="/contact.html" class="btn">Get Started</a>
+    </section>
+    
+    <section class="section">
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Merchants Onboarded</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">Free</div>
+                <div class="stat-label">Service for Merchants</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>How It Works</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>1. Reach Out</h3>
+                <p>Contact us to express interest in accepting Bitcoin. We'll explain the options and help you choose the best solution for your business.</p>
+            </div>
+            <div class="feature">
+                <h3>2. We Set It Up</h3>
+                <p>Our team handles the technical setup — Lightning wallets, payment pointers, QR codes. No technical knowledge required.</p>
+            </div>
+            <div class="feature">
+                <h3>3. Start Accepting</h3>
+                <p>Begin accepting Bitcoin payments instantly. Lower fees, instant settlements, access to the growing Bitcoin economy.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Why Accept Bitcoin?</h2>
+        <ul style="max-width: 600px; margin: 0 auto; list-style: none;">
+            <li style="padding: 1rem 0; border-bottom: 1px solid #eee;">⚡ <strong>Instant settlements</strong> — No waiting days for payment processing</li>
+            <li style="padding: 1rem 0; border-bottom: 1px solid #eee;">💰 <strong>Lower fees</strong> — Fraction of credit card processing costs</li>
+            <li style="padding: 1rem 0; border-bottom: 1px solid #eee;">🌍 <strong>Global customers</strong> — Reach Bitcoin holders worldwide</li>
+            <li style="padding: 1rem 0; border-bottom: 1px solid #eee;">🔒 <strong>No chargebacks</strong> — Final payments, truly yours</li>
+            <li style="padding: 1rem 0;">🚀 <strong>Future-proof</strong> — Be part of the monetary revolution</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>Bridge 2 Bitcoin — Growing the UK Bitcoin Economy</p>
+        <div class="social-links">
+            <a href="https://twitter.com/bridge2bitcoin" target="_blank">Twitter</a>
+            <a href="https://instagram.com/bridge2bitcoin" target="_blank">Instagram</a>
+            <a href="https://geyser.fund/project/bridge2bitcoin" target="_blank">Geyser</a>
+        </div>
+    </footer>
+</body>
+</html>
