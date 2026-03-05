@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downloads - Bridge 2 Bitcoin</title>
+    <title>Where to Spend Bitcoin - Bridge 2 Bitcoin</title>
     <style>
         * {
             margin: 0;
@@ -46,7 +46,7 @@
         
         .section {
             padding: 4rem 2rem;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
         }
         
@@ -63,42 +63,25 @@
             margin-bottom: 2rem;
         }
         
-        .download-card {
-            background: #f5f5f5;
+        .map-card {
             border-radius: 8px;
-            padding: 2rem;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            background: #f5f5f5;
         }
         
-        .download-card object,
-        .download-card iframe {
+        .map-card iframe {
             width: 100%;
             height: 600px;
             border: none;
-            border-radius: 4px;
-            background: #fff;
+            display: block;
         }
         
-        .download-actions {
+        .map-note {
             margin-top: 1.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .download-actions a {
-            display: inline-block;
-            background: var(--orange);
-            color: var(--light);
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            transition: transform 0.3s, opacity 0.3s;
-        }
-        
-        .download-actions a:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
+            text-align: center;
+            color: var(--gray);
+            font-size: 0.95rem;
         }
         
         footer {
@@ -122,9 +105,8 @@
         }
         
         @media (max-width: 600px) {
-            .download-card object,
-            .download-card iframe {
-                height: 400px;
+            .map-card iframe {
+                height: 450px;
             }
         }
     </style>
@@ -142,16 +124,12 @@
     </header>
     
     <section class="section">
-        <h1>Downloads</h1>
-        <p class="subtitle">Instructions: Print double-sided, flipping on the short side, then fold to form a trifold leaflet.</p>
-        <div class="download-card">
-            <object data="Merchant-Flyer-Swiss_WoS-v7.0.pdf" type="application/pdf" aria-label="Bridge 2 Bitcoin leaflet preview">
-                <iframe src="Merchant-Flyer-Swiss_WoS-v7.0.pdf" title="Bridge 2 Bitcoin leaflet"></iframe>
-            </object>
-            <div class="download-actions">
-                <a href="Merchant-Flyer-Swiss_WoS-v7.0.pdf" download>Download leaflet (PDF)</a>
-            </div>
+        <h1>Where to Spend Bitcoin</h1>
+        <p class="subtitle">A live map of UK & Ireland merchants who welcome Lightning payments. Support them with your sats.</p>
+        <div class="map-card">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1y3fCDIEzIaS9LSltjpT2Lr-D1lmQEj0&amp;ehbc=2E312F" loading="lazy" allowfullscreen title="Bitcoin-friendly merchants map"></iframe>
         </div>
+        <p class="map-note">Map curated by Bridge 2 Bitcoin. Want your business listed? <a href="contact.html">Get in touch.</a></p>
     </section>
     
     <footer>
